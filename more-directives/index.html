@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="directivesApp">
+<head>
+    <meta charset="UTF-8">
+
+    <title>More Directives</title>
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+</body>
+    <h1>More Directives</h1>
+
+    <div ng-controller="moreDirectivesController as cont">
+        <input type="checkbox" ng-model="cont.checked">
+        <p ng-if="cont.checked">Some Content</p>
+
+        <div ng-repeat="person in cont.personList">
+            <p>
+                Name: {{person.name}}
+                Age: {{person.age}}
+                Language: {{person.language}}
+            </p>
+            <hr/>
+        </div>
+    </div>
+</html>

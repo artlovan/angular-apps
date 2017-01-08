@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="nestedControllers">
+<head>
+    <meta charset="UTF-8">
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+    <title>Nested Controllers</title>
+</head>
+
+<body>
+    <h1>Nested Controllers</h1>
+
+    <div ng-controller="Controller1 as c1">
+        <p>{{c1.ngProp}}</p>
+    </div>
+
+    <div ng-controller="Controller2 as c2">
+        <p>{{c2.ngProp}}</p>
+    </div>
+</body>
+</html>
